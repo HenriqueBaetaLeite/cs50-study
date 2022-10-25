@@ -5,7 +5,7 @@ def check(word):
   if word.lower() in words:
     return True
   else:
-      return False
+    return False
 
 def load(dictionary):
   file = open(dictionary, "r")
