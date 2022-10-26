@@ -1,7 +1,7 @@
 
 try:
   x = int(input("X: "))
-except:
+except ValueError:
   print("Must provide an integer number!")
 
 y = int(input("Y: "))
