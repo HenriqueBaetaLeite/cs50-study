@@ -6,6 +6,10 @@ engine = pyttsx3.init()
 
 # engine.say(f"Olá, {name}")
 
-engine.say("Pessoal, preciso de um favor")
+voices = engine.getProperty('voices')
+
+print(voices)
+
+engine.say("Pessoal, preciso de um favor.")
 
 engine.runAndWait()
