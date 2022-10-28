@@ -8,7 +8,7 @@ engine = pyttsx3.init()
 
 voices = engine.getProperty('voices')
 
-print(voices)
+# print(voices)
 
 engine.say("Pessoal, preciso de um favor.")
 
