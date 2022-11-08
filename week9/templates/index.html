@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flask API</title>
-  </head>
-  <body>
-    <h2>Training with Flask</h2>
+{% extends "layout.html" %}
 
-    <form action="/greet" method="get">
-      <input type="text" name="name" placeholder="Name" autocomplete="off" />
-      <button type="submit">Greet</button>
-    </form>
-  </body>
-</html>
+{% block body %}
+
+  <form action="/greet" method="get">
+    <input type="text" name="name" placeholder="Name" autocomplete="off" />
+    <button type="submit">Greet</button>
+  </form>
+
+{% endblock %}
